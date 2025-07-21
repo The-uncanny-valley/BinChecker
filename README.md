@@ -22,14 +22,6 @@ This project was created as a test assignment for an Android Developer internshi
 * **Persistence**: Room
 * **Navigation**: Jetpack Navigation Component
 
-## Screenshots
-
-| BIN Lookup Screen                 | History Screen                      |
-| --------------------------------- | ----------------------------------- |
-| ![Lookup](screenshots/lookup.png) | ![History](screenshots/history.png) |
-
-> *Note: Please replace the image paths above with actual screenshots or remove this section if not applicable.*
-
 ## 🔧 Setup Instructions
 
 1. Clone the repository:
