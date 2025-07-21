@@ -66,7 +66,3 @@ com.example.binchecker
 * Error handling, loading states, and input validation are pending.
 * No pagination or advanced caching for now
 * History cannot be cleared
-
-## License
-
-This project is under the MIT License — see the [LICENSE](LICENSE) file for details.
