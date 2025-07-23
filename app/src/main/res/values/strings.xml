@@ -3,4 +3,8 @@
     <string name="bin_check">Проверка BIN карты</string>
     <string name="search">Искать</string>
     <string name="enter_bin">Введите BIN (6–8 цифр)</string>
+    <string name="data">Данные</string>
+    <string name="country">Страна</string>
+    <string name="payment_system">Платёжная система</string>
+    <string name="bank">Банк</string>
 </resources>
