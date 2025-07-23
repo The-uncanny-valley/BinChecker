@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/binSearchFragment">
+
+    <fragment
+        android:id="@+id/binSearchFragment"
+        android:name="com.example.binchecker.BinSearchFragment"
+        android:label="fragment_bin_search"
+        tools:layout="@layout/fragment_bin_search">
+        <action
+            android:id="@+id/action_binSearchFragment_to_binHistoryFragment"
+            app:destination="@id/binHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/binHistoryFragment"
+        android:name="com.example.binchecker.BinHistoryFragment"
+        android:label="fragment_bin_history"
+        tools:layout="@layout/fragment_bin_history" />
+</navigation>
+
