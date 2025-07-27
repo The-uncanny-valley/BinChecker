@@ -11,14 +11,30 @@
         android:label="fragment_bin_search"
         tools:layout="@layout/fragment_bin_search">
         <action
-            android:id="@+id/action_binSearchFragment_to_binHistoryFragment"
-            app:destination="@id/binHistoryFragment" />
+            android:id="@+id/action_binSearchFragment_to_binResultFragment"
+            app:destination="@id/binResultFragment" />
+        <argument
+            android:name="bin"
+            app:argType="integer" />
     </fragment>
 
+    <fragment
+        android:id="@+id/binResultFragment"
+        android:name="com.example.binchecker.BinResultFragment"
+        android:label="fragment_bin_result"
+        tools:layout="@layout/fragment_bin_result" >
+        <action
+            android:id="@+id/action_binResultFragment_to_binHistoryFragment"
+            app:destination="@id/binHistoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/binHistoryFragment"
         android:name="com.example.binchecker.BinHistoryFragment"
         android:label="fragment_bin_history"
-        tools:layout="@layout/fragment_bin_history" />
+        tools:layout="@layout/fragment_bin_history" >
+        <action
+            android:id="@+id/action_binHistoryFragment_to_binSearchFragment4"
+            app:popUpTo="@id/binSearchFragment" />
+    </fragment>
 </navigation>
 
