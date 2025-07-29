@@ -4,8 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_primary"
-    tools:context=".BinSearchFragment">
+    tools:context=".presentation.binsearch.BinSearchFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardContainer"
@@ -25,7 +24,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/border_background"
             android:orientation="vertical"
-            android:padding="30dp">
+            android:paddingHorizontal="30dp"
+            android:paddingBottom="40dp">
 
             <TextView
                 android:id="@+id/title"
@@ -67,6 +67,7 @@
                     android:letterSpacing="0.1"
                     android:maxLength="8"
                     android:padding="16dp"
+                    android:textColor="@color/text_primary"
                     android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,6 +85,17 @@
                 app:cornerRadius="10dp"
                 app:iconTint="@null" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/alegreya_sc_regular"
+                android:letterSpacing="0.2"
+                android:text="@string/history"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -93,13 +105,9 @@
                 android:id="@+id/starImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal"
                 android:contentDescription="@null"
                 android:src="@drawable/star_icon" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="48dp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
