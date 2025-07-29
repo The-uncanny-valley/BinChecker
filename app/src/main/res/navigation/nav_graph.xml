@@ -7,29 +7,53 @@
 
     <fragment
         android:id="@+id/binSearchFragment"
-        android:name="com.example.binchecker.BinSearchFragment"
+        android:name="com.example.binchecker.presentation.binsearch.BinSearchFragment"
         android:label="fragment_bin_search"
         tools:layout="@layout/fragment_bin_search">
         <action
             android:id="@+id/action_binSearchFragment_to_binResultFragment"
             app:destination="@id/binResultFragment" />
-        <argument
-            android:name="bin"
-            app:argType="integer" />
     </fragment>
 
     <fragment
         android:id="@+id/binResultFragment"
-        android:name="com.example.binchecker.BinResultFragment"
+        android:name="com.example.binchecker.presentation.binresult.BinResultFragment"
         android:label="fragment_bin_result"
         tools:layout="@layout/fragment_bin_result" >
         <action
             android:id="@+id/action_binResultFragment_to_binHistoryFragment"
             app:destination="@id/binHistoryFragment" />
+        <argument
+            android:name="bankUrl"
+            app:argType="string" />
+        <argument
+            android:name="bankName"
+            app:argType="string" />
+        <argument
+            android:name="bankPhone"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="bankCity"
+            app:argType="string" />
+        <argument
+            android:name="scheme"
+            app:argType="string" />
+        <argument
+            android:name="longitude"
+            app:argType="integer" />
+        <argument
+            android:name="latitude"
+            app:argType="integer" />
+        <argument
+            android:name="countryName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/binHistoryFragment"
-        android:name="com.example.binchecker.BinHistoryFragment"
+        android:name="com.example.binchecker.presentation.binhistory.BinHistoryFragment"
         android:label="fragment_bin_history"
         tools:layout="@layout/fragment_bin_history" >
         <action
