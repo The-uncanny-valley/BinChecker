@@ -22,7 +22,7 @@ This project was created as a test assignment for an Android Developer internshi
 * **Persistence**: Room
 * **Navigation**: Jetpack Navigation Component
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 1. Clone the repository:
 
@@ -58,11 +58,6 @@ com.example.binchecker
 
 ## Limitations
 
-* Only the layout for the search screen has been implemented so far.
-* No actual search functionality is wired to the API yet.
-* BIN data is not retrieved or displayed.
 * No history screen or local data storage is available yet.
-* Navigation between screens is not yet implemented.
 * Error handling, loading states, and input validation are pending.
 * No pagination or advanced caching for now
-* History cannot be cleared
