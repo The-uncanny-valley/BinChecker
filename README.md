@@ -6,7 +6,7 @@ This project was created as a test assignment for an Android Developer internshi
 ## Planned Features
 
 * Search BIN information using [https://binlist.net](https://binlist.net)
-* Display details such as card scheme, type, brand, country, and bank info
+* Display details such as card scheme, type, country, and bank info
 * Save and view query history locally
 * Tap to copy or open external links (like location or bank website)
 * Clean and responsive UI with input validation and error handling
@@ -17,9 +17,7 @@ This project was created as a test assignment for an Android Developer internshi
 * **Architecture**: MVVM, Clean Architecture principles
 * **UI**: XML
 * **Concurrency**: Kotlin Coroutines
-* **Dependency Injection**: Hilt
 * **Networking**: Retrofit
-* **Persistence**: Room
 * **Navigation**: Jetpack Navigation Component
 
 ## Setup Instructions
@@ -39,10 +37,10 @@ This project was created as a test assignment for an Android Developer internshi
 
 ```
 com.example.binchecker
-├── data        // Room DB, Retrofit API, DTOs, mappers
-├── domain      // Use cases, models, repositories
-├── presentation// ViewModels, Activities, Fragments
-├── di          // Hilt modules
+├── data         // Room DB, Retrofit API, DTOs, mappers
+├── domain       // Use cases, models, repositories
+├── presentation // ViewModels, Activities, Fragments
+├── di           // Hilt modules
 ```
 
 ## Usage
@@ -56,8 +54,16 @@ com.example.binchecker
    * **Country** to view location in maps
 5. Visit the **History** tab to see previous searches
 
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="media/fragment_bin_search.png" width="200"/></td>
+    <td><img src="media/fragment_bin_result.png" width="200"/></td>
+  </tr>
+</table>
+
 ## Limitations
 
 * No history screen or local data storage is available yet.
-* Error handling, loading states, and input validation are pending.
 * No pagination or advanced caching for now
