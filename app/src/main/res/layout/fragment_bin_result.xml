@@ -57,11 +57,12 @@
                 app:cursorColor="@color/text_primary" />
 
             <TextView
+                android:id="@+id/textViewBin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
-                android:text="@string/country"
+                android:text="@null"
                 android:textColor="@color/text_primary"
                 android:textSize="24sp" />
 
@@ -76,11 +77,21 @@
                 android:textSize="24sp" />
 
             <TextView
+                android:id="@+id/textViewType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
-                android:text="@string/payment_system"
+                android:text="@null"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sc_regular"
+                android:letterSpacing="0.05"
+                android:text="@string/scheme"
                 android:textColor="@color/text_primary"
                 android:textSize="24sp" />
 
@@ -95,16 +106,7 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/alegreya_sc_regular"
-                android:letterSpacing="0.05"
-                android:text="@string/bank"
-                android:textColor="@color/text_primary"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textViewBankName"
+                android:id="@+id/textViewBankInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/alegreya_sc_regular"

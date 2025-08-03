@@ -50,6 +50,9 @@
         <argument
             android:name="countryName"
             app:argType="string" />
+        <argument
+            android:name="binNumber"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/binHistoryFragment"

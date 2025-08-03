@@ -3,8 +3,6 @@ package com.example.binchecker.presentation.binsearch
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
-import android.view.animation.AnimationUtils
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.binchecker.R
@@ -23,7 +21,6 @@ class BinSearchFragment : Fragment(R.layout.fragment_bin_search) {
 
         val buttonSearch = view.findViewById<MaterialButton>(R.id.buttonSearch)
         val editBin = view.findViewById<TextInputEditText>(R.id.editBin)
-        val starImage = view.findViewById<ImageView>(R.id.starImage)
 
         buttonSearch.setOnClickListener {
             val inputText = editBin.text.toString().trim()
@@ -65,7 +62,8 @@ class BinSearchFragment : Fragment(R.layout.fragment_bin_search) {
                                 binInfo.scheme ?: "",
                                 binInfo.country?.longitude ?: 0,
                                 binInfo.country?.latitude ?: 0,
-                                binInfo.country?.name ?: ""
+                                binInfo.country?.name ?: "",
+                                bin
                             )
 
                         withContext(Dispatchers.Main) {
@@ -85,10 +83,5 @@ class BinSearchFragment : Fragment(R.layout.fragment_bin_search) {
                 }
             }
         }
-    }
-
-    private fun startAnimation(starImage: ImageView) {
-        val rotateAnimation = AnimationUtils.loadAnimation(requireContext(), R.anim.rotate_star)
-        starImage.startAnimation(rotateAnimation)
     }
 }
