@@ -30,7 +30,6 @@ class BinSearchFragment : Fragment(R.layout.fragment_bin_search) {
             if (inputText.isEmpty()) {
                 Toast.makeText(requireContext(), "This field is empty", Toast.LENGTH_LONG).show()
             } else if (inputText.length == 6 || inputText.length == 8) {
-//                startAnimation(starImage)
                 loadBinInfo(inputText)
 
             } else {
@@ -43,6 +42,14 @@ class BinSearchFragment : Fragment(R.layout.fragment_bin_search) {
         CoroutineScope(Dispatchers.IO).launch {
             try {
                 val response = RetrofitInstance.api.getBinInfo(bin)
+
+                if (response.code() == 429) {
+                    withContext(Dispatchers.Main) {
+                        Toast.makeText(requireContext(), "Достигнут лимит запросов. Попробуйте завтра.", Toast.LENGTH_LONG).show()
+                    }
+                    return@launch // метка возврата
+                }
+
                 if (response.isSuccessful) {
                     val binInfo = response.body()
 
@@ -50,7 +57,7 @@ class BinSearchFragment : Fragment(R.layout.fragment_bin_search) {
                         // Переход к фрагменту с результатом
                         val action =
                             BinSearchFragmentDirections.actionBinSearchFragmentToBinResultFragment(
-                                binInfo.scheme ?: "",
+                                binInfo.bank?.url ?: "",
                                 binInfo.bank?.name ?: "",
                                 binInfo.bank?.phone ?: "",
                                 binInfo.type ?: "",
