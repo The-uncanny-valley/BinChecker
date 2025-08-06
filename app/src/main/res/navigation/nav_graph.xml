@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_binSearchFragment_to_binResultFragment"
             app:destination="@id/binResultFragment" />
+        <action
+            android:id="@+id/action_binSearchFragment_to_binHistoryFragment"
+            app:destination="@id/binHistoryFragment" />
     </fragment>
 
     <fragment

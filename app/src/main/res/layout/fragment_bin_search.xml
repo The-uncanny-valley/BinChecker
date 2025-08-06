@@ -86,12 +86,17 @@
                 app:iconTint="@null" />
 
             <TextView
+                android:id="@+id/buttonHistory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:fontFamily="@font/alegreya_sc_regular"
-                android:letterSpacing="0.2"
+                android:foreground="?attr/selectableItemBackground"
+                android:letterSpacing="0.4"
+                android:minHeight="48dp"
                 android:text="@string/history"
                 android:textColor="@color/text_primary"
                 android:textSize="16sp" />
