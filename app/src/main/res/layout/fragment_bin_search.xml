@@ -36,26 +36,28 @@
                 android:gravity="center"
                 android:letterSpacing="0.05"
                 android:text="@string/bin_check"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="36sp" />
 
             <!-- Поле ввода BIN -->
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="@string/enter_bin"
-                android:textColorHint="@color/text_secondary"
+                android:textColorHint="@color/on_background_secondary"
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp"
-                app:boxStrokeColor="@color/text_primary"
+                app:boxStrokeColor="@color/on_background_primary"
                 app:boxStrokeWidth="2dp"
                 app:boxStrokeWidthFocused="2dp"
                 app:counterMaxLength="8"
-                app:cursorColor="@color/text_primary">
+                app:cursorColor="@color/on_background_primary"
+                app:hintTextColor="@color/on_background_primary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editBin"
@@ -67,7 +69,7 @@
                     android:letterSpacing="0.1"
                     android:maxLength="8"
                     android:padding="16dp"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/on_background_primary"
                     android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,11 +78,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:backgroundTint="@color/button_primary"
+                android:backgroundTint="@color/primary"
                 android:fontFamily="@font/alegreya_sc_medium"
                 android:padding="12dp"
                 android:text="@string/search"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_primary"
                 android:textSize="24sp"
                 app:cornerRadius="10dp"
                 app:iconTint="@null" />
@@ -98,7 +100,7 @@
                 android:letterSpacing="0.4"
                 android:minHeight="48dp"
                 android:text="@string/history"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="16sp" />
 
             <View

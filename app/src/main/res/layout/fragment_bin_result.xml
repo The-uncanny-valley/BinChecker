@@ -35,7 +35,7 @@
                 android:gravity="center"
                 android:letterSpacing="0.05"
                 android:text="@string/data"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="36sp" />
 
             <!-- Поле ввода BIN -->
@@ -44,17 +44,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="@string/enter_bin"
-                android:textColorHint="@color/text_secondary"
+                android:textColorHint="@color/on_background_secondary"
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp"
-                app:boxStrokeColor="@color/text_primary"
+                app:boxStrokeColor="@color/on_background_primary"
                 app:boxStrokeWidth="2dp"
                 app:boxStrokeWidthFocused="2dp"
                 app:counterMaxLength="8"
-                app:cursorColor="@color/text_primary" />
+                app:cursorColor="@color/on_background_primary" />
 
             <TextView
                 android:id="@+id/textViewBin"
@@ -63,7 +63,7 @@
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
                 android:text="@null"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="24sp" />
 
             <TextView
@@ -73,7 +73,7 @@
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
                 android:text="@null"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="24sp" />
 
             <TextView
@@ -83,7 +83,7 @@
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
                 android:text="@null"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="24sp" />
 
             <TextView
@@ -92,7 +92,7 @@
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
                 android:text="@string/scheme"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="24sp" />
 
             <TextView
@@ -102,7 +102,7 @@
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
                 android:text="@null"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="24sp" />
 
             <TextView
@@ -112,7 +112,7 @@
                 android:fontFamily="@font/alegreya_sc_regular"
                 android:letterSpacing="0.05"
                 android:text="@null"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/on_background_primary"
                 android:textSize="24sp" />
 
         </LinearLayout>
